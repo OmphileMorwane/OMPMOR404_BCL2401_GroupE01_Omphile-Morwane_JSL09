@@ -36,9 +36,14 @@ div#crypto {
     font-size: 1.3rem;
 }
 
+div#crypto > p {
+    font-size: 1.3rem;
+}
+
 div#crypto-top {
     display: flex;
     align-items: center;
+    margin-bottom:5px;
 }
 
 div#crypto-top > span {
