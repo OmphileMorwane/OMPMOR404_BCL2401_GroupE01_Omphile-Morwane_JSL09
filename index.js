@@ -1,6 +1,6 @@
 // Background & Author
 try {
-    // Fetch a random flower image from Unsplash API
+    // Fetch a random holiday destination image from Unsplash API
     const res = await fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=holiday destinations")
     const data = await res.json()
     // Set background image and author name based on fetched data
@@ -14,7 +14,7 @@ try {
 
 // Crypocurrency
 try {
-    // Fetch data about Dogecoin from CoinGecko API
+    // Fetch data about dogecoin from coingecko API
     const res = await fetch("https://api.coingecko.com/api/v3/coins/dogecoin")
     if (!res.ok) {
         throw Error("Something went wrong") // Throw an error if response is not OK
@@ -27,8 +27,8 @@ try {
     `
     document.getElementById("crypto").innerHTML += `
         <p>🎯: R${data.market_data.current_price.zar}</p>
-        <p>📈: R${data.market_data.high_24h.zar}</p>
-        <p>📉: R${data.market_data.low_24h.zar}</p>
+        <p>⬆️: R${data.market_data.high_24h.zar}</p>
+        <p>⬇️: R${data.market_data.low_24h.zar}</p>
     `
 } catch (err) {
     console.error(err) // Log errors to the console
